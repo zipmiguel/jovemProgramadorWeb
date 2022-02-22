@@ -1,0 +1,29 @@
+div{
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#total{
+    border: 10px solid #ff0000;
+    width: auto;
+    height: auto;
+}
+
+#caixa01{
+    background-color: #00f;
+}
+
+#caixa02{
+    background-color: #ff0;
+}
+
+#caixa03{
+    background-color: #f0f;
+    clear: left;
+}
+
+#caixa04{
+    background-color: #0f0;
+}

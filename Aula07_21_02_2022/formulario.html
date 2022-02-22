@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Formulario de Cadastro</legend>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+                <label>Endereço:</label>
+                <!-- required -> campo origatório -->
+                <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required />
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha" maxlength="8" minlength="5" required />
+                <label>URL</label>
+                <input type="url" name="url" id="url" required />
+                <label>Cor</label>
+                <input type="color" name="cor" id="cor">
+                <label>Número</label>
+                <input type="number" name="numero" id="numero" max="120" />
+                <!-- numero com barra de deslocar 
+                <input type="range" name="numero" id="numero" value="10">-->
+                <label>Data de Nasciment:</label>
+                <input type="date" name="nascimento" id="nascimento" />
+                <label>Hora</label>
+                <input type="time" name="hora" id="hora" />
+                <label>Mês</label>
+                <input type="month" name="mes" id="mes" />
+                <label>Semana</label>
+                <input type="week" name="semana" id="semana" />
+                <label>Data Local</label>
+                <input type="datetime-local" name="dataLocal" id="dataLocal" />
+                <label>
+                    <input type="submit" id="bt_enviar" value="Enviar" />
+                    <!-- <input type="image" name="bt_enviar" src="../Aula03_11_02_2022/imagens/favicomCarro32px.png" /> -->
+                    <input type="reset" id="bt_reset" value="Limpar" />
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
