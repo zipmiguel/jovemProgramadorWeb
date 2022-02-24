@@ -13,14 +13,13 @@
     height: 446px;
 }
 
-.containerLetrasNumeross{
+.containerLetrasNumeros{
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 30px;
     border: 1px solid #000;
-    width: 446px;
-    height: 446px;
+    width: 300px;
+    height: 300px;
 }
 
 .letras #A, #B, #C, #D, #E, #F, #G, #H{
