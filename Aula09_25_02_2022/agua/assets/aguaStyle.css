@@ -5,7 +5,7 @@ body{
     margin-top: 0;
 }
 
-#azul{
+.azul{
     width: 100%;
     height: 170px;
     background-color: #2e73b9;
@@ -34,7 +34,9 @@ body{
 }
 
 .cx{
-    width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 420px;
     float: right;
     margin: 15px 100px 0 0;
     font-size: 13px;
@@ -48,7 +50,7 @@ body{
     background-color: #286C5C;
 }
 
-.diagonalVerde{
+.verticalVerde{
     width: 80px;
     height: 170px;
     float: left;
@@ -61,6 +63,9 @@ body{
     color: #FFF;
     margin: 80px 0 0 0;
     font: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
     /* Forçar ficar em uma linha só */
     white-space: nowrap;
     /* Chrome e Microsoft Edge */
@@ -74,6 +79,48 @@ body{
 .caixa{
     width: 200px;
     height: 112px;
-    padding: 55px 0 0 0;
+    padding: 20px 0 0 0;
     float: left;
+}
+
+.cx ul li{
+    line-height: 25px;
+    list-style-image: url(./images/gota_15px.png);
+}
+
+#cinza{
+    width: 100%;
+    height: 170px;
+    margin-left: auto;
+    background-color: #9C9C9C;
+}
+
+.verticalCinza{
+    height: 170px;
+    width: 80px;
+    background-color: #867875;
+    float: left;
+}
+
+.verticalAzul{
+    height: 170px;
+    width: 80px;
+    background-color: #024893;
+    float: left;
+    text-transform: uppercase;
+}
+
+#laranja{
+    width: 100%;
+    height: 170px;
+    background-color: #d18d43;
+    float: left;
+}
+
+.verticalLaranja{
+    height: 170px;
+    width: 80px;
+    background-color: #CD6600;
+    float: left;
+    text-transform: uppercase;
 }
