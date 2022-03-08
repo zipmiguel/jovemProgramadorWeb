@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #232323;
+    color: #919191;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* formatação de várias elementos, basta separar por vírgula */
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 0 90px;
+    /* em - vai herdar do elemento conforme o número;
+    nesse caso vai buscar o fonte-size do div (elemento pai do h1) e aumentar em 1.5 vezes */
+    font-size: 1.5em;
+    /* font-weight: normal; - para tirar o negrito, o h1 é em negrito */
+    font-weight: normal;
+}
+
+/* formatação do header */
+header{
+    width: 980px;
+    height: 50px;
+    padding: 40px;
+    /* margin left e right auto é pra centralizar o ojbeto */
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+header #grupo{
+    display: block;
+    float: left;
+    width: auto;
+}
+
+#grupo h1, #grupo h2{
+    margin: 0;
+}
+
+#grupo h1{
+    font-size: 2em;
+}
+
+#grupo h2{
+    font-size: 1.8em;
+}
+
+/* contatos */
+header #header-contato{
+    display: block;
+    float: right;
+    width: auto;
+}
+
+header #header-contato ul{
+    margin: 15px 0 0 0;
+}
+
+header #header-contato li{
+    display: inline-block;
+    border-left: 1px solid #C0BAB6;
+    padding: 0 0 0 15px;
+    margin: 0 0 0 15px;
+}
+
+header #header-contato li:first-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+div#topo{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#topo, #topo a{
+    color: #C0BAB6;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+.material-icons{
+    vertical-align: middle;
+}
+
+/* formatação do menu home */
+a{
+    color: #ff9900;    
+    text-decoration: none;
+}
+
+nav{
+    width: 980px;
+    height: 60px;
+    padding: 0;
+    /* margin left e right auto é pra centralizar o ojbeto */
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red;     */
+}
+
+nav ul{
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav li{
+    display: block;
+    float: left;
+    margin: 0 30px 0 0 ;
+}
+
+nav li a{
+    display: block;
+    /* margin e padding com 2 valores se refere a top e bottom, nessa ordem */
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+nav li a:hover{
+    color: #919191;
+}
