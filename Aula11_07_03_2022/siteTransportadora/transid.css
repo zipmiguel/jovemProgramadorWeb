@@ -9,7 +9,7 @@ body{
 
 /* formatação de várias elementos, basta separar por vírgula */
 h1, h2, h3, h4, h5, h6{
-    margin: 0 0 0 90px;
+    margin: 0;
     /* em - vai herdar do elemento conforme o número;
     nesse caso vai buscar o fonte-size do div (elemento pai do h1) e aumentar em 1.5 vezes */
     font-size: 1.5em;
@@ -126,4 +126,63 @@ nav li a{
 
 nav li a:hover{
     color: #919191;
+}
+
+main{
+    width: 980px;
+    height: 350px;
+    /* para centralizar - maring lefit e right: auto */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* border: 1px solid red; */
+}
+
+.section-main{
+    margin: 0 10px 0 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #CCC;    
+}
+
+.section-main h1{
+    text-align: center;
+}
+
+.section-main p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+article{
+    height: 250px;
+}
+
+footer{
+    text-align: center;
+}
+
+.botao{
+    display: inline-block;
+    font-weight: bold;
+    font-size: .9em;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid
+}
+
+a.botao{
+    color: #FFF;
+
+}
+
+.botao.saiba-mais-caminhoes{
+    background: linear-gradient(to right, #c0e079, #98ba55);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #98ba55;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-caminhoes:hover{
+    color: #ff9900;
 }
