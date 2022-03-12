@@ -128,6 +128,7 @@ nav li a:hover{
     color: #919191;
 }
 
+#container-cliente, 
 main{
     width: 980px;
     height: 350px;
@@ -135,8 +136,25 @@ main{
     margin-left: auto;
     margin-right: auto;
     display: grid;
+}
+
+main#conteudo{
     grid-template-columns: 25% 25% 25% 25%;
     /* border: 1px solid red; */
+}
+
+main#cliente{
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid red;
+    margin: 15px 0;
+    height: 450px;
+}
+
+#container-cliente{
+    border: 1px solid red;
+    grid-template-columns: 326px 326px 326px;    
+    height: 380px;
 }
 
 .section-main{
@@ -168,6 +186,7 @@ footer{
     font-weight: bold;
     font-size: .9em;
     padding: 5px 5px 5px 5px;
+    cursor: pointer;
     border: 1px solid
 }
 
@@ -177,12 +196,82 @@ a.botao{
 }
 
 .botao.saiba-mais-caminhoes{
-    background: linear-gradient(to right, #c0e079, #98ba55);
+    background: linear-gradient(to right, #17830d, #93e06f);
     text-shadow: 1px 1px 0 #000;
-    border-color: #98ba55;
+    border-color: #93e06f;
     border-radius: 20px;
 }
 
 .botao.saiba-mais-caminhoes:hover{
-    color: #ff9900;
+    color: #88f35e;
+}
+
+.botao.saiba-mais-avioes{
+    background: linear-gradient(to right, #380326, #a232b1);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #a232b1;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-avioes:hover{
+    color: #d87ac0;
+}
+
+.botao.saiba-mais-rastreamento{
+    background: linear-gradient(to right, #581717, #f80303);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #f80303;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-rastreamento:hover{
+    color: #fc7f7f;
+}
+
+.botao.saiba-mais-smartphone{
+    background: linear-gradient(to right, #1e1f5f, #0206ff);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #0206ff;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-smartphone:hover{
+    color: #7678fc;
+}
+
+#cliente header{
+    margin: 10px 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cliente header h1{
+    width: 980px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+#container-cliente section{
+    margin: 10px;
+    border: 1px solid red;
+}
+
+#container-cliente figure{
+    width: 250px;
+    height: 150px;
+    margin-left: 25px;
+    border: 5px solid #232323;
+}
+
+#container-cliente p{
+    width: 250px;
+    margin-left: 25px;
+    text-align: justify;
+    line-height: 20px;
+    border: 1px solid red;
+}
+
+#container-cliente .botao{
+    margin-left: 100px;
 }
