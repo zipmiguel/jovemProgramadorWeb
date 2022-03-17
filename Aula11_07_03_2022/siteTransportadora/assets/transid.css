@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #232323;
+    color: #919191;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* formatação de várias elementos, basta separar por vírgula */
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    /* em - vai herdar do elemento conforme o número;
+    nesse caso vai buscar o fonte-size do div (elemento pai do h1) e aumentar em 1.5 vezes */
+    font-size: 1.5em;
+    /* font-weight: normal; - para tirar o negrito, o h1 é em negrito */
+    font-weight: normal;
+}
+
+/* formatação do header */
+header{
+    width: 980px;
+    height: 50px;
+    padding: 40px;
+    /* margin left e right auto é pra centralizar o ojbeto */
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+header #grupo{
+    display: block;
+    float: left;
+    width: auto;
+}
+
+#grupo h1, #grupo h2{
+    margin: 0;
+}
+
+#grupo h1{
+    font-size: 2em;
+}
+
+#grupo h2{
+    font-size: 1.8em;
+}
+
+/* contatos */
+header #header-contato{
+    display: block;
+    float: right;
+    width: auto;
+}
+
+header #header-contato ul{
+    margin: 15px 0 0 0;
+}
+
+header #header-contato li{
+    display: inline-block;
+    border-left: 1px solid #C0BAB6;
+    padding: 0 0 0 15px;
+    margin: 0 0 0 15px;
+}
+
+header #header-contato li:first-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+div#topo{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#topo, #topo a{
+    color: #C0BAB6;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+.material-icons{
+    vertical-align: middle;
+}
+
+/* formatação do menu home */
+a{
+    color: #ff9900;    
+    text-decoration: none;
+}
+
+nav{
+    width: 980px;
+    height: 60px;
+    padding: 0;
+    /* margin left e right auto é pra centralizar o ojbeto */
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red;     */
+}
+
+nav ul{
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav li{
+    display: block;
+    float: left;
+    margin: 0 30px 0 0 ;
+}
+
+nav li a{
+    display: block;
+    /* margin e padding com 2 valores se refere a top e bottom, nessa ordem */
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+nav li a:hover{
+    color: #919191;
+}
+
+#container-cliente, 
+main{
+    width: 980px;
+    height: 350px;
+    /* para centralizar - maring lefit e right: auto */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+main#conteudo{
+    grid-template-columns: 25% 25% 25% 25%;
+    /* border: 1px solid red; */
+}
+main#empresa,
+main#cliente{
+    width: 100%;
+    background-color: #333333;
+    /* border: 1px solid red; */
+    margin: 15px 0;
+    height: 450px;
+}
+
+#container-cliente{
+    /* border: 1px solid red; */
+    grid-template-columns: 326px 326px 326px;    
+    height: 380px;
+}
+
+#container-empresa{
+    /* border: 1px solid red; */
+    grid-template-columns: 326px 326px 326px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-main{
+    margin: 0 10px 0 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #CCC;    
+}
+
+.section-main h1{
+    text-align: center;
+}
+
+.section-main p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+article{
+    height: 250px;
+}
+
+footer{
+    text-align: center;
+}
+
+.botao{
+    display: inline-block;
+    font-weight: bold;
+    font-size: .9em;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    border: 1px solid
+}
+
+a.botao{
+    color: #FFF;
+
+}
+
+.botao.saiba-mais-caminhoes{
+    background: linear-gradient(to right, #17830d, #93e06f);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #93e06f;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-caminhoes:hover{
+    color: #88f35e;
+}
+
+.botao.saiba-mais-avioes{
+    background: linear-gradient(to right, #380326, #a232b1);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #a232b1;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-avioes:hover{
+    color: #d87ac0;
+}
+
+.botao.saiba-mais-rastreamento{
+    background: linear-gradient(to right, #581717, #f80303);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #f80303;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-rastreamento:hover{
+    color: #fc7f7f;
+}
+
+.botao.saiba-mais-smartphone{
+    background: linear-gradient(to right, #1e1f5f, #0206ff);
+    text-shadow: 1px 1px 0 #000;
+    border-color: #0206ff;
+    border-radius: 20px;
+}
+
+.botao.saiba-mais-smartphone:hover{
+    color: #7678fc;
+}
+
+#cliente header{
+    margin: 10px 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cliente header h1{
+    width: 980px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+#container-cliente section{
+    margin: 10px;
+    /* border: 1px solid red; */
+}
+
+#container-cliente figure{
+    width: 250px;
+    height: 150px;
+    margin-left: 25px;
+    border: 5px solid #232323;
+}
+
+#container-cliente p{
+    height: 140px;
+    width: 250px;
+    margin-left: 25px;
+    text-align: justify;
+    line-height: 20px;
+    /* border: 1px solid red; */
+}
+
+#container-cliente .botao{
+    margin-left: 100px;
+}
+
+#cliente .botao{
+    background-color: #ccc;
+}
+
+#rodape-pagina{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    height: 350px;
+}
+
+#rodape-pagina nav{
+    width: 100%;
+    height: 330px;
+    /* border: 1px solid red; */
+}
+
+#rodape-pagina #rodape-nav li{
+    /* border: 1px solid red; */
+    height: 35px;
+    width: 100%;
+    text-align: left;
+}
+
+#rodape-pagina #rodape-comentario li{
+    /* border: 1px solid red; */
+    height: 45px;
+}
+
+.rodape-titulo{
+    margin: 15px;
+}
+
+#rodape-pagina #rodape-contato label{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+}
+
+#rodape-pagina #rodape-contato textarea,
+#rodape-pagina #rodape-contato input{
+    margin-top: 5px;
+    background-color: #333333;
+    color: #fff;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+#rodape-pagina #rodape-contato textarea{
+    margin-top: 5px;
+    width: 170px;
+    height: 40px;
+    background-color: #333333;
+    color: #fff;
+}
+
+#rodape-pagina #rodape-contato form{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bt-form{
+    background-color: #ff9900;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#empresa header h1{
+    text-align: center;
+}
+
+#empresa #container-empresa section p{
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 250px;
+    text-align: justify;
+    line-height: 25px;
+} 
+
+#container-localizacao{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 450px;
+    margin-left: 25px;
+    display: grid;
+}
+
+#maps{
+    /* border: 1px solid red; */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
