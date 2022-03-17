@@ -142,19 +142,30 @@ main#conteudo{
     grid-template-columns: 25% 25% 25% 25%;
     /* border: 1px solid red; */
 }
-
+main#empresa,
 main#cliente{
     width: 100%;
-    background-color: #FFF;
-    border: 1px solid red;
+    background-color: #333333;
+    /* border: 1px solid red; */
     margin: 15px 0;
     height: 450px;
 }
 
 #container-cliente{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-template-columns: 326px 326px 326px;    
     height: 380px;
+}
+
+#container-empresa{
+    /* border: 1px solid red; */
+    grid-template-columns: 326px 326px 326px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-main{
@@ -248,13 +259,13 @@ a.botao{
 
 #cliente header h1{
     width: 980px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 
 #container-cliente section{
     margin: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #container-cliente figure{
@@ -265,13 +276,117 @@ a.botao{
 }
 
 #container-cliente p{
+    height: 140px;
     width: 250px;
     margin-left: 25px;
     text-align: justify;
     line-height: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #container-cliente .botao{
     margin-left: 100px;
 }
+
+#cliente .botao{
+    background-color: #ccc;
+}
+
+#rodape-pagina{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    height: 350px;
+}
+
+#rodape-pagina nav{
+    width: 100%;
+    height: 330px;
+    /* border: 1px solid red; */
+}
+
+#rodape-pagina #rodape-nav li{
+    /* border: 1px solid red; */
+    height: 35px;
+    width: 100%;
+    text-align: left;
+}
+
+#rodape-pagina #rodape-comentario li{
+    /* border: 1px solid red; */
+    height: 45px;
+}
+
+.rodape-titulo{
+    margin: 15px;
+}
+
+#rodape-pagina #rodape-contato label{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+}
+
+#rodape-pagina #rodape-contato textarea,
+#rodape-pagina #rodape-contato input{
+    margin-top: 5px;
+    background-color: #333333;
+    color: #fff;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+#rodape-pagina #rodape-contato textarea{
+    margin-top: 5px;
+    width: 170px;
+    height: 40px;
+    background-color: #333333;
+    color: #fff;
+}
+
+#rodape-pagina #rodape-contato form{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bt-form{
+    background-color: #ff9900;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#empresa header h1{
+    text-align: center;
+}
+
+#empresa #container-empresa section p{
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 250px;
+    text-align: justify;
+    line-height: 25px;
+} 
+
+#container-localizacao{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 450px;
+    margin-left: 25px;
+    display: grid;
+}
+
+#maps{
+    /* border: 1px solid red; */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
