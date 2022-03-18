@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+header{
+    width: 980px;
+    height: 80px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+div#top header{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    background-color: #2E8B57;
+}
+
+header #logo{
+    /* border: 1px solid red; */
+    width: auto;
+    display: block;
+    float: left;
+}
+
+div#logo #image-logo{
+    margin: 0 auto;
+}
+
+header #header-perfil{
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 0;
+    padding: 20px 50px 0 0;
+    float: right;
+}
+
+header #header-perfil ul{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0 0 0 30px;
+    width: 100%;
+    height: 55px;
+}
+
+header #header-perfil #icon-perfil{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+}
+
+header #header-perfil #label-perfil{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0 auto;
+    width: 38px;
+    height: 25px;
+}
+
+header #header-perfil #icon-shop{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+}
+
+header #header-perfil #label-shop{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 25px;
+}
+
+header #header-perfil a{
+    color: #363636;
+}
+
+nav{
+    /* border: 1px solid red; */
+    width: 980px;
+    height: 40px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+nav.navbar{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: inline-block;
+}
+
+nav ul{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 12px;
+    text-transform: uppercase;  
+    font-size: 13px;  
+    display: flex;
+    justify-content: space-around;
+    background-color: #751414;
+}
+
+nav li{
+    /* border: 1px solid red; */
+    width: auto;
+}
+
+nav.navbar li a{
+    color: #2E8B57;
+}
