@@ -115,7 +115,7 @@ nav{
     /* border: 1px solid red; */
     width: 980px;
     padding: 0px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 nav.navbar{
@@ -337,4 +337,131 @@ section.row-produtos{
     text-transform: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+div.conteudo-fale-consco{
+    /* border: 1px solid red; */
+    height: 580px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+div#fale-conosco{
+    /* border: 1px solid red; */
+    padding: 0 0 0 50px;
+    width: 100%;
+    display: inline-block;
+}
+
+div#fale-conosco section{
+    /* border: 1px solid red; */
+    padding: 0;
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+}
+
+.label-input{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.label-input label{
+    /* border: 1px solid red; */
+    width: 75px;
+    margin: 0;
+    padding: 0 10px 0 0;
+    text-align: center;
+}
+
+.label-input input{
+    /* border: 1px solid red; */
+    width: 200px;
+    margin: 0;
+    padding: 0 0 0 20px;
+    border-radius: 5px;
+}
+
+.label-input textarea{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 60px;
+    margin: 0;
+    padding: 0 0 0 20px;
+    border-radius: 5px;
+}
+
+#buttons{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+}
+
+#buttons label{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+#buttons label #bt_enviar, #bt_reset{
+    /* border: 1px solid red; */
+    margin: 5px;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#buttons label #bt_enviar{
+    background-color: #777;
+}
+
+div#navbar-sobre-nos #ul-bottom-navbar-sobre-nos{
+    /* border: 1px solid red; */
+    border-top: 3px solid #2E8B57;
+    padding-top: 20px;
+    height: 60px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+div#navbar-sobre-nos #ul-bottom-navbar-sobre-nos li{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0 auto;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: bold;
+}
+
+div#sobre-nos{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+div#sobre-nos section{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 0;
+    width: 400px;
+    height: 100%;
+    display: flex;
+}
+
+div#sobre-nos section p{
+    border: 2px solid #2E8B57;
+    width: auto;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
 }
