@@ -127,7 +127,7 @@ nav.navbar{
 nav ul{
     /* border: 1px solid red; */
     margin: 0;
-    padding: 12px;
+    padding: 12px 0 12px 0;
     text-transform: uppercase;  
     font-size: 13px;  
     display: flex;
@@ -271,7 +271,7 @@ header #header-contact ul{
 
 #conteudo-produtos{
     /* border: 1px solid red; */
-    height: 1180px;
+    height: 980px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -289,11 +289,11 @@ div#produtos{
 section.row-produtos{
     /* border: 1px solid red; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     height: 140px;
     margin: 0 auto;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     /* flex-wrap: wrap; */
 }
 
@@ -341,7 +341,7 @@ section.row-produtos{
 
 div.conteudo-fale-consco{
     /* border: 1px solid red; */
-    height: 580px;
+    height: 680px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -350,7 +350,7 @@ div.conteudo-fale-consco{
 
 div#fale-conosco{
     /* border: 1px solid red; */
-    padding: 0 0 0 50px;
+    padding: 0;
     width: 100%;
     display: inline-block;
 }
@@ -358,7 +358,7 @@ div#fale-conosco{
 div#fale-conosco section{
     /* border: 1px solid red; */
     padding: 0;
-    width: 350px;
+    width: 650px;
     height: 200px;
     display: inline-block;
 }
@@ -375,7 +375,7 @@ div#fale-conosco section{
     /* border: 1px solid red; */
     width: 75px;
     margin: 0;
-    padding: 0 10px 0 0;
+    padding: 0 10px 0 50px;
     text-align: center;
 }
 
@@ -400,13 +400,9 @@ div#fale-conosco section{
     /* border: 1px solid red; */
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 50px;
     display: flex;
-}
-
-#buttons label{
-    /* border: 1px solid red; */
-    margin: 0 auto;
+    padding: 0 0 0 100px;
 }
 
 #buttons label #bt_enviar, #bt_reset{
@@ -417,7 +413,14 @@ div#fale-conosco section{
 }
 
 #buttons label #bt_enviar{
+    background-color: #2E8B57;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#buttons label #bt_reset{
     background-color: #777;
+    color: #000;
 }
 
 div#navbar-sobre-nos #ul-bottom-navbar-sobre-nos{
@@ -426,13 +429,13 @@ div#navbar-sobre-nos #ul-bottom-navbar-sobre-nos{
     padding-top: 20px;
     height: 60px;
     display: flex;
-    width: auto;
-    flex-direction: column;
+    /* width: 100%; */
+    margin: 0;
 }
 
 div#navbar-sobre-nos #ul-bottom-navbar-sobre-nos li{
     /* border: 1px solid red; */
-    padding: 0;
+    padding: 0 40px 0 0;
     margin: 0 auto;
     font-size: 16px;
     text-transform: none;
@@ -443,7 +446,7 @@ div#sobre-nos{
     /* border: 1px solid red; */
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 50px 0;
     display: inline-block;
 }
 
@@ -452,7 +455,6 @@ div#sobre-nos section{
     margin: 0 auto;
     padding: 0;
     width: 400px;
-    height: 100%;
     display: flex;
 }
 
@@ -464,4 +466,5 @@ div#sobre-nos section p{
     display: flex;
     text-align: center;
     border-radius: 10px;
+    line-height: 1.5em;
 }
