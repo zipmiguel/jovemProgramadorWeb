@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>jQuery.getJSON demo</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "https://viacep.com.br/ws/01001000/json/",
+            success: function (data){
+                if (data.uf == "SC"){
+                    $(".uf").text("Santa Catarina")
+                }else{
+                    $(".uf").text("não é Santa Catarina")
+                }
+                $("#logradouro").text(data.logradouro);
+            },
+            error: function () {
+                console.log("erro" + data)
+            },
+            beforeSend: function () {
+
+            }
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <span id="logradouro"></span>
+        <span class="uf"></span>
+    </div>
+</body>
+</html>
