@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Exemplo API IBGE</title>
+    <link rel="stylesheet" href="geral.css" type="text/css"/>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="geral.js" type="text/javascript"></script>
 </head>
@@ -11,6 +12,7 @@
     <form action="">
         <div id="endereco">
             <label>Selecione um estado:</label>
+            <!-- chamar a função com parenteses faz com que o JavaScript executa a função quando lê ela -->
             <select id="estado" onchange="mudancaCidade()"></select>
             <div id="endereco-cidade">
                 <label>Selecione uma cidade:</label>
@@ -18,11 +20,28 @@
             </div>
         </div>
     </form>
+    <div id="resultado">
+        <span class="fechar">X</span>
+        <h2>Resultado da busca</h2>
+        <div>
+            <span class="result-item">Estado: <span class="estado-atual"></span></span>
+            <span class="result-item">Cidade: <span class="cidade-atual"></span></span>
+        </div>
+    </div>
 </body>
 <!-- script fica na parte debaixo do HTML quando o scrpit precisa 
     que todos ou alguns elementos estejam carregados no HTML antes 
     de fazer algum processo pelo javascript -->
 <script>
     $("#endereco").find("#endereco-cidade").hide();
+    $("#resultado").hide();
+    // Desse modo abaixo vai dar erro
+    // $("#resultado").find(".fechar").click(fechar)
+
+    // clocar antes do on o que já foi carregado, 
+    // e depois do on o que vai carregar posteiormente
+    $("#resultado").on("click",".fechar",fechar);
+    // chamar a função sem os parenteses, faz com o que o JavaScript só execute a função depois de alguma interação
+    $("#endereco").change("select",escolher);
 </script>
 </html>
